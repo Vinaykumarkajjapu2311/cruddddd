@@ -27,6 +27,7 @@ app.post("/users", (req, res) => {
 
 // --- READ (GET all users) ---
 app.get("/users", (req, res) => {
+  console.log("users sssssssss");
   res.json(users);
 });
 
