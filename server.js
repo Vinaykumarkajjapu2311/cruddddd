@@ -13,6 +13,10 @@ let users = [
   { id: 2, name: "Bob", email: "bob@gmail.com" },
 ];
 
+app.get("/", (req, res) => {
+  res.send("Welcome to CRUD Backend API!");
+});
+
 // --- CREATE (POST) ---
 app.post("/users", (req, res) => {
   const { name, email } = req.body;
